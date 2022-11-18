@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="control-label"><b><u>CHIEF COMPLAINT</u></b></span>
+    </div>
+    <div class="col-md-9" style="margin-top: 5px">
+        <div id="WrapRight" #rigthtdiv>
+            <label><b>Right Shoulder:</b> </label>
+            <br />
+            <section class="col-md-9" style="margin-top: 5px">
+                <textarea id="txtFreeFormCCR" Style="width:700px;height:100px" onchange="txtAreaMe(this)">
+Right shoulder pain is _____ /10, described as constant, intermittent, sharp, stabbing, dull, achy pain. Worse with range of motion and slightly improves with rest. The patient is unable to reach overhead or behind the back and is frequently woken up at night due to pain.
+</textarea>
+
+            </section>
+
+        </div>
+        <div id="WrapLeft" #leftdiv>
+            <label><b>Left Shoulder:</b> </label>
+            <br />
+            <section class="col-md-9" style="margin-top: 5px">
+                <textarea id="txtFreeFormCCL" Style="width:700px;height:100px" onchange="txtAreaMe(this)">
+Left shoulder pain is _____ /10, described as intermittent, sharp, stabbing, dull, achy pain. Worse with range of motion and slightly improves with rest. The patient is unable to reach overhead or behind the back and is frequently woken up at night due to pain.
+</textarea>
+
+            </section>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+    function txtAreaMe(txt) {
+
+        var val = $(txt).val();
+        $(txt).text(val);
+    }
+
+
+</script>
+
+

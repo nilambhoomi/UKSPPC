@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="control-label"><b><u>CHIEF COMPLAINT</u></b></span>
+    </div>
+    <div class="col-md-9" style="margin-top: 5px">
+
+        <div id="WrapRight" #rigthtdiv>
+            <label><b>Right Knee:</b> </label>
+            <br />
+            <textarea id="txtFreeFormCCR" onchange="txtAreaMe(this)" Style="Width:700px;height:100px">
+ Right knee pain is _____ /10, described as constant, intermittent, sharp, stabbing, dull, achy pain. Worse with ambulation and slightly improves with rest. The patient has difficulty raising from a chair and walking up and down stairs. The patient also notes clicking, popping, buckling, and intermittent locking.
+</textarea>
+
+
+        </div>
+
+        <div id="WrapLeft" #leftdiv>
+            <label><b>Left Knee:</b> </label>
+            <br />
+            <textarea id="txtFreeFormCCL" onchange="txtAreaMe(this)" Style="Width:700px;height:100px">
+Left knee pain is _____ /10, described as constant, intermittent, sharp, stabbing, dull achy pain. Worse with ambulation and slightly improves with rest. The patient has difficulty raising from a chair and walking up and down stairs. The patient also notes clicking, popping, buckling, and intermittent locking.
+</textarea>
+
+        </div>
+
+    </div>
+</div>
+<script>
+
+
+    function txtAreaMe(txt) {
+
+        var val = $(txt).val();
+        $(txt).text(val);
+    }
+
+
+
+</script>
+
+
